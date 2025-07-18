@@ -55,17 +55,41 @@
 .image2:hover {
   transform: scale(1.03);
 }
-@media (max-width: 730px){
-  .image,
-  .image2 {
+.image-phone {
+  display: none;
+  height: 350px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.2s;
+  
+}
+@media (max-width: 700px){
+  .image {
     height: 250px;
     width: 300px;
+    float: none;
+  }
+  .image2 {
+    display: none;
   }
   .text,
   .text2 {
-    font-size: 14px;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
   }
   .container {
     margin-bottom: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .image-phone {
+    height: 250px;
+    width: 300px;
+    float: none;
+    display: flex;
   }
 }
