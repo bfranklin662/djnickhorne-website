@@ -1,0 +1,18 @@
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 40px;
+  margin-top: 30px;
+}
+
+.spotify-playlist {
+  width: 800px;
+  height: 750px;
+  margin-bottom: 10px;
+}
+
+@media screen {}
+

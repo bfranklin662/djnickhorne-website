@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DJ Nick Horne</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/music.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        </div class="hamgburger-menu-container">
+          <a onclick=hideSidebar()>
+            <img class="hamburger-menu" src="icons/closewhite.png">
+          </a>
+        </div>
+        <li><a class="buttons" href="index.html">Home</a></li>
+        <li><a class="buttons" href="about-page.html">About</a></li>
+        <li><a class="buttons" href="music-page.html">Music</a></li>
+        <li><a class="buttons" href="mixes-page.html">Mixes</a></li>
+        <li><a class="buttons" href="videos-page.html">Videos</a></li>
+      </ul>
+      <ul class="header">
+        <li><a class="buttons hideOnMobile" href="index.html">Home</a></li>
+        <li><a class="buttons hideOnMobile" href="about-page.html">About</a></li>
+        <li><a class="buttons hideOnMobile" href="music-page.html">Music</a></li>
+        <li><a class="buttons hideOnMobile" href="mixes-page.html">Mixes</a></li>
+        <li><a class="buttons hideOnMobile" href="videos-page.html">Videos</a></li>
+      </ul>
+    </nav>
+
+    </div class="logo-container">
+      <a href="index.html">
+        <img class="top-left-logo" src="graphics/djnh.png" >
+      </a>  
+    </div>
+
+    </div class="hamgburger-menu-container">
+      <a class="show-sidebar" onclick=showSidebar()>
+        <img class="hamburger-menu" src="icons/menuwhite.png">
+      </a>
+    </div>
+   
+    <div class="spacing"></div>
+
+    <div>
+      <img class="logo" src="graphics/animation.gif">
+    </div>
+    <div class="music-grid">
+        <iframe class="spotify-playlist" style="border-radius:12px" src="https://open.spotify.com/embed/artist/28QDTz1KbowOF8qXHcbj36?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    
+    
+    <div class="links">Socials</div>
+     <footer class="footer">
+      <a class="footer-button" href="https://www.instagram.com/djnickhorne" target="_blank">
+        <img class="insta-button" src="icons/instawhite.png">
+      </a>
+      <a class="footer-button" href="https://www.facebook.com/djnickhorne" target="_blank">
+        <img class="facebook-button" src="icons/facebookwhite.png">
+      </a>
+      <a class="footer-button" href="https://soundcloud.com/nickhornemusic" target="_blank">
+        <img class="soundcloud-button" src="icons/soundcloudwhite.png">
+      </a>
+      <a class="footer-button" href="https://www.youtube.com/nickhornemusic" target="_blank">
+        <img class="youtube-button" src="icons/youtubewhite.png">
+      </a>
+      <a class="footer-button" href="https://open.spotify.com/artist/28QDTz1KbowOF8qXHcbj36?si=wAGHIBP3RAi1wwutUwUlVA" target="_blank">
+        <img class="spotify-button" src="icons/Spotify.png">
+      </a>
+    </footer>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex'        
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>

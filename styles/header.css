@@ -1,0 +1,198 @@
+.logo-container {
+  position: relative;
+}
+.top-left-logo {
+  height: 50px;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  position: fixed;
+  cursor: pointer;
+  transition: transform .2s;
+  z-index: 2;
+}
+.top-left-logo:hover {
+  transform: scale(1.07);
+}
+
+li { 
+  display: table-cell; 
+  position: relative; 
+  height: 50px;
+  width: 80px;
+  letter-spacing: 0.8px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  float: left;
+  padding: 11px 0;
+}
+
+ul { 
+  margin: 0px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+
+.buttons {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+  margin-top: 10px;
+}
+.mobile-buttons {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.buttons:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.buttons:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.header {
+  height: 78px;
+  background: linear-gradient(rgb(0, 0, 0, 0.6), transparent);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  left: -1px;
+  right: -1px;
+  top: 0px;
+  z-index: 1;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 1;
+}
+.sidebar li {
+  width: 100%
+}
+
+.hamburger-menu-container {
+  position: relative;
+}
+.hamburger-menu {
+  height: 33px;
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 1;
+}
+.hamburger-menu:hover {
+  transform: scale(1.07);
+}
+
+.show-sidebar{
+  display: none;
+}
+@media(max-width: 700px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .show-sidebar{
+    display: block;
+  }
+}
+@media(max-width: 400px) {
+  .sidebar{
+    width: 100%;
+  }
+}
+
+.links {
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  
+}
+
+.footer-button {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.footer-button:hover {
+  transform: scale(1.15);
+}
+
+.insta-button,
+.facebook-button,
+.soundcloud-button,
+.youtube-button {
+  height: 45px;
+}
+.spotify-button {
+  margin-top: 5px;
+  height: 35px;
+}
