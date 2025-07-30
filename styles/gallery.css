@@ -3,12 +3,17 @@
   
   display: grid;
   margin: 0 auto;
-  width: 450px; /* the size */
+  width: 500px; /* the size */
   aspect-ratio: 1;
   grid: auto-flow 1fr/repeat(3,1fr);
   gap: var(--g);
   margin-bottom: -30px;
   margin-top: -40px;
+}
+@media (max-width: 400px) {
+  .gallery {
+    width: 380px
+  }
 }
 .gallery img {
   width: 100%;
