@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DJ Nick Horne</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta property="og:title" content="DJ Nick Horne"/> 
+    <meta property="og:image" content="https://i.ibb.co/pBVjVhGG/nh-Greece-Thumbnail-Logo.jpg"/>
+    <meta property="og:image:secure_url" content="https://i.ibb.co/pBVjVhGG/nh-Greece-Thumbnail-Logo.jpg"/>
+    <meta property="og:image:type" content="image/jpeg" /> 
+    <meta property="og:description" content="London based House and Commercial Nightclub DJ"/>
+    <meta property="og:url" content="https://djnickhorne.com"/>
+    <meta property="og:image:width" content="1200px"/>
+    <meta property="og:image:height" content="627px"/>
+    <meta property="og:type" content="website"/>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        </div class="hamgburger-menu-container">
+          <a onclick=hideSidebar()>
+            <img class="hamburger-menu" src="icons/closewhite.png">
+          </a>
+        </div>
+        <li><a class="buttons" href="index.html">Home</a></li>
+        <li><a class="buttons" href="about-page.html">About</a></li>
+        <li><a class="buttons" href="music-page.html">Music</a></li>
+        <li><a class="buttons" href="mixes-page.html">Mixes</a></li>
+        <li><a class="buttons" href="videos-page.html">Videos</a></li>
+        <li><a class="buttons" href="contact-page.html">Contact</a></li>
+      </ul>
+      <ul class="header">
+        <li><a class="buttons hideOnMobile" href="index.html">Home</a></li>
+        <li><a class="buttons hideOnMobile" href="about-page.html">About</a></li>
+        <li><a class="buttons hideOnMobile" href="music-page.html">Music</a></li>
+        <li><a class="buttons hideOnMobile" href="mixes-page.html">Mixes</a></li>
+        <li><a class="buttons hideOnMobile" href="videos-page.html">Videos</a></li>
+        <li><a class="buttons hideOnMobile" href="contact-page.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    </div class="logo-container">
+      <a href="index.html">
+        <img class="top-left-logo" src="graphics/djnh.png" >
+      </a>  
+    </div>
+
+    </div class="hamgburger-menu-container">
+      <a class="show-sidebar" onclick=showSidebar()>
+        <img class="hamburger-menu" src="icons/menuwhite.png">
+      </a>
+    </div>
+    <div class="spacing-contact"></div>
+
+    <div>
+      <img class="logo" src="graphics/animation.gif">
+    </div>
+
+    <main>
+      <section class="section-contact">
+        <div class="container">
+          <h2>Contact:</h2>
+          <p>
+            For bookings/enquiries please get in touch below. Whether you're planning a private party, corporate event, wedding, or need a nightclub slot filled, I'm here to bring the music and energy to make it unforgettable. Use the form below to ask questions, check availability and together we can start planning your next event. I will get back to you as soon as possible, let's make something amazing happen!
+          </p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d495bc1a-0369-47bc-947c-0711c02ec275">
+            <div class="form-group">
+              <label for="firstname">First Name*</label>
+              <input 
+                type="text" 
+                name="firstname" 
+                id="name" 
+                required 
+                class="form-element"
+                placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name*</label>
+              <input 
+                type="text" 
+                name="lastname" 
+                id="lastname" 
+                required 
+                class="form-element"
+                placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address*</label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="form-element"
+                placeholder="Email address">
+            </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="form-group full">
+              <label for="message">Let me know what you're looking for?*</label>
+              <textarea name="message" id="message" class="form-element" placeholder="I need a DJ for an event..."></textarea>
+            </div>
+            <div class="submit-group">
+              <input type="submit" value="SEND MESSAGE">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+
+    
+
+    <div class="paragraph3">Social Media</div>
+    <footer class="footer">
+      <a class="footer-button" href="https://www.instagram.com/djnickhorne" target="_blank">
+        <img class="insta-button" src="icons/instawhite.png">
+      </a>
+      <a class="footer-button" href="https://www.facebook.com/djnickhorne" target="_blank">
+        <img class="facebook-button" src="icons/facebookwhite.png">
+      </a>
+      <a class="footer-button" href="https://soundcloud.com/nickhornemusic" target="_blank">
+        <img class="soundcloud-button" src="icons/soundcloudwhite.png">
+      </a>
+      <a class="footer-button" href="https://www.youtube.com/nickhornemusic" target="_blank">
+        <img class="youtube-button" src="icons/youtubewhite.png">
+      </a>
+      <a class="footer-button" href="https://open.spotify.com/artist/28QDTz1KbowOF8qXHcbj36?si=wAGHIBP3RAi1wwutUwUlVA" target="_blank">
+        <img class="spotify-button" src="icons/Spotify.png">
+      </a>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex'        
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
