@@ -12,11 +12,37 @@
   width: 1000px;
   margin-top: -70px;
 }
+.mixcloud-picture {
+  height: 200px;
+  width: 1000px;
+  margin-bottom: 70px;
+  margin-top: -70px;
+}
 
-@media (max-width: 700px){
+@media (min-width: 611px) and (max-width: 1080px){
   .mixcloud-mix {
   height: 150px;
-  width: 370px;
+  width: 570px;
+  margin-top: -70px;
+} 
+.mixcloud-picture {
+  height: 200px;
+  width: 570px;
+  margin-bottom: 70px;
+  margin-top: -70px;
+}
+}
+
+@media (max-width: 610px){
+  .mixcloud-mix {
+  height: 150px;
+  width: 360px;
+  margin-top: -70px;
+} 
+.mixcloud-picture {
+  height: 200px;
+  width: 360px;
+  margin-bottom: 70px;
   margin-top: -70px;
 }
 }
